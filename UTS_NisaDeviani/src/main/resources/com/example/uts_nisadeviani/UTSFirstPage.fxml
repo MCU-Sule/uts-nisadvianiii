@@ -5,11 +5,12 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="485.0" prefWidth="1086.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uts_nisadeviani.controller.UTSController1">
+<VBox alignment="CENTER" prefHeight="485.0" prefWidth="1086.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uts_nisadeviani.controller.UTSController1">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -48,13 +49,23 @@
         <TableView fx:id="table1" prefHeight="400.0" prefWidth="261.0" HBox.hgrow="ALWAYS">
          <HBox.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </HBox.margin></TableView>
+         </HBox.margin>
+         <columns>
+            <TableColumn fx:id="kolom1" prefWidth="218.66669714450836" text="Movie Title" />
+            <TableColumn fx:id="kolom2" prefWidth="145.99998474121094" text="Movie Genre" />
+            <TableColumn fx:id="kolom3" prefWidth="56.0" text="Durasi" />
+         </columns></TableView>
       <VBox prefHeight="395.0" prefWidth="403.0">
          <children>
               <TableView fx:id="table2" prefHeight="315.0" prefWidth="319.0">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
+               <columns>
+                  <TableColumn fx:id="kolomA" prefWidth="204.6666258573532" text="Movie Title" />
+                  <TableColumn fx:id="kolomB" prefWidth="100.0" text="Last Watch" />
+                  <TableColumn fx:id="kolomC" prefWidth="86.6666259765625" text="is Favorite" />
+               </columns>
             </TableView>
          </children>
       </VBox>
